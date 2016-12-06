@@ -1,0 +1,41 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity"
+    android:background="#FFFFFF"
+    >
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Item"
+        />
+    <GridView
+        android:id="@+id/gv"
+        android:layout_width="675dp"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:numColumns="3"
+        android:background="#FFFFFF"
+        android:verticalSpacing="5dp"
+        android:horizontalSpacing="5dp"
+        android:gravity="left"
+        android:layout_below="@id/btn"
+        >
+    </GridView>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text=""
+        android:ems="10"
+        android:layout_above="@+id/gv"
+        android:layout_toRightOf="@+id/btn"
+        android:layout_toEndOf="@+id/btn"
+        android:id="@+id/editText" />
+</RelativeLayout>

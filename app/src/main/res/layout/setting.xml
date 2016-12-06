@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/udp_IP" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/udp_IP"
+        android:layout_alignRight="@+id/udp_IP"
+        android:layout_alignEnd="@+id/udp_IP"
+        android:layout_marginTop="19dp"
+        android:id="@+id/udp_PORT" />
+
+    <TextView
+        android:text="Port"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/udp_PORT"
+        android:layout_toLeftOf="@+id/udp_PORT"
+        android:layout_toStartOf="@+id/udp_PORT"
+        android:id="@+id/textView" />
+
+    <TextView
+        android:text="IP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/udp_PORT"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:id="@+id/textView2" />
+
+    <Button
+        android:text="Apply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/apply"
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/udp_PORT"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
